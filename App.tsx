@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from 'react';
 import Navbar from './components/Navbar';
 import GameCard from './components/GameCard';
@@ -7,7 +6,6 @@ import { GAMES_DATA, CATEGORIES } from './constants';
 import { Game, Category } from './types';
 
 const App: React.FC = () => {
-  // Add explicit generics to useState for correct type inference
   const [selectedGame, setSelectedGame] = useState<Game | null>(null);
   const [activeCategory, setActiveCategory] = useState<Category | 'All'>('All');
   const [searchQuery, setSearchQuery] = useState<string>('');

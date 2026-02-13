@@ -1,7 +1,5 @@
-
 import React from 'react';
 
-// Define the interface for Navbar props for type safety
 interface NavbarProps {
   onHomeClick: () => void;
   searchQuery: string;
